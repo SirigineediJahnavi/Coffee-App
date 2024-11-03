@@ -1,0 +1,184 @@
+/* Matchmaking.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    background-color: #f3f4f6; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+  }
+  
+  .matchmaking-container {
+    max-width: 800px; /* Center container */
+    margin: 40px auto; /* Spacing from top */
+    padding: 20px;
+    background-color: white; /* Card-like appearance */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3b82f6; /* Bright blue color */
+    text-transform: uppercase; /* Uppercase header */
+  }
+  
+  .current-user-details {
+    border-bottom: 2px solid #e5e7eb; /* Divider line */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .subheader {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #3b82f6; /* Consistent color theme */
+  }
+  
+  .find-matches-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3b82f6; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  }
+  
+  .find-matches-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .match-card {
+    background-color: #f9fafb; /* Light card background */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #3b82f6; /* Accent color on the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  }
+  
+  .match-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .match-card h3 {
+    color: #1d4ed8; /* Darker shade for match name */
+  }
+  
+  .like-button {
+    background-color: #3b82f6; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .like-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .no-matches {
+    text-align: center; /* Center the no matches message */
+    font-style: italic; /* Italicize for emphasis */
+    color: #9ca3af; /* Grey color for subtlety */
+  }
+  
+  @media (max-width: 600px) {
+    .matchmaking-container {
+      padding: 15px; /* Reduced padding for smaller screens */
+    }
+  
+    .header, .subheader {
+      font-size: 1.5rem; /* Responsive font size */
+    }
+  
+    .find-matches-button, .like-button {
+      font-size: 1rem; /* Responsive button size */
+      padding: 10px; /* Reduced padding */
+    }
+  }
+
+
+  /* Matchmaking.css */
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes likeButtonBounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Matchmaking styles */
+  .matchmaking-container {
+    /* existing styles */
+  }
+  
+  /* Adding animation on match card appearance */
+  .match-card {
+    background-color: #f9fafb; /* Light card background */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #3b82f6; /* Accent color on the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Like button with a bounce effect */
+  .like-button {
+    background-color: #3b82f6; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    animation: scaleUp 0.3s ease-in-out; /* Scale-up effect on button render */
+  }
+  
+  .like-button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+    animation: likeButtonBounce 0.5s ease; /* Bounce effect on hover */
+  }
+  
+  

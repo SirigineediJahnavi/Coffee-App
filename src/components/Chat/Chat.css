@@ -1,0 +1,154 @@
+/* Chat.css */
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #3b82f6;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.notification {
+    background-color: #ffd700;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.messages-container {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.sent {
+    background-color: #3b82f6;
+    color: white;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: #e1e1e1;
+    color: black;
+    align-self: flex-start;
+}
+
+.message-content {
+    max-width: 80%;
+}
+
+.timestamp {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.read-receipt {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.8rem;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.message-input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.file-input {
+    display: none; /* Hide the default file input */
+}
+
+.file-label {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.file-label:hover {
+    background-color: #2563eb;
+}
+
+.no-file-message {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.send-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #2563eb;
+}
+
+.sent-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,47 @@
+/* DailyRecommendations.css */
+
+.daily-recommendations-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; /* Light background */
+    border-radius: 10px;
+    padding: 20px;
+    color: black; /* Default text color */
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black; /* Color for the heading */
+}
+
+.preferences {
+    margin-bottom: 20px;
+}
+
+.preference-select {
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc; /* Border color */
+    background-color: white; /* Dropdown background */
+    color: black; /* Dropdown text color */
+}
+
+.notification-toggle {
+    margin-top: 10px;
+}
+
+.recommendation-list {
+    margin-top: 20px;
+}
+
+.recommendation-item {
+    background-color: #f9f9f9; /* Light background for items */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border for items */
+}

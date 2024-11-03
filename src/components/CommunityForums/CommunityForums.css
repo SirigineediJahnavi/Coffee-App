@@ -1,0 +1,118 @@
+/* CommunityForums.css */
+
+.community-forums-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Light background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; /* Dark text color */
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Primary color for the heading */
+}
+
+.post-form {
+    margin-bottom: 20px;
+}
+
+.post-title-input,
+.post-content-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* Light border */
+    margin-bottom: 10px;
+}
+
+.post-title-input {
+    font-size: 1.2rem; /* Larger size for the title */
+}
+
+.post-content-input {
+    min-height: 100px; /* Minimum height for the content input */
+}
+
+.submit-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.posts-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    background-color: #f8f9fa; /* Light grey background for each post */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.post-item:hover {
+    background-color: #e9ecef; /* Change background on hover */
+}
+
+.post-item h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Title size */
+}
+
+.post-item p {
+    margin: 5px 0 0; /* Margin for the content */
+    font-size: 1rem; /* Content size */
+}
+
+.post-item small {
+    color: #6c757d; /* Grey color for author */
+    font-size: 0.875rem; /* Smaller size for author */
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+
+.report-button,
+.delete-button {
+    background-color: #ffc107; /* Warning color for report */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.report-button:hover {
+    background-color: #e0a800; /* Darker color on hover */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Danger color for delete */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker color on hover */
+}
+
+.reported-text {
+    color: #dc3545; /* Red color for reported message */
+    font-weight: bold; /* Bold text */
+}

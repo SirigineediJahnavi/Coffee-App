@@ -1,0 +1,54 @@
+/* src/components/CustomizationOptions.css */
+
+.customization-options-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; /* Dark text color */
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Primary color for the heading */
+}
+
+.customization-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type='text'], select {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+    width: 100%; /* Full width */
+}
+
+.save-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

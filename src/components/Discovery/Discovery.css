@@ -1,0 +1,65 @@
+/* Discovery.css */
+
+.discovery-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-input, .filter-select {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 150px; /* Minimum width for inputs */
+}
+
+.filter-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #2563eb;
+}
+
+.profiles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,72 @@
+/* App.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Soft background color */
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .app-header {
+    background-color: #343a40; /* Darker background for the header */
+    color: white; /* White text color */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .app-header h1 {
+    margin: 0;
+  }
+  
+  .app-nav {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+    justify-content: center; /* Center buttons in the navigation */
+  }
+  
+  .app-nav button {
+    margin: 10px; /* More spacing between buttons */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px; /* Increased font size */
+  }
+  
+  .app-nav button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .app-content {
+    padding: 20px;
+    margin: 20px auto; /* Center the content */
+    max-width: 1200px; /* Limit max width */
+    background-color: white; /* White background for the content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .component-container {
+    padding: 20px; /* Inner padding for components */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px; /* Spacing below headings */
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5; /* Improved line height for readability */
+    color: #555; /* Dark gray text color */
+  }
+  

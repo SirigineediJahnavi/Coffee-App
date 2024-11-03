@@ -1,0 +1,100 @@
+/* src/components/AnalyticsDashboard.css */
+
+.analytics-dashboard-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Light background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; /* Dark text color */
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* Primary color for the heading */
+}
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.metric {
+    background-color: #f8f9fa; /* Light grey background for metrics */
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.metric:hover {
+    background-color: #e9ecef; /* Change background on hover */
+}
+
+.metric h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Title size */
+}
+
+.metric p {
+    margin: 5px 0 0; /* Margin for the content */
+    font-size: 1.2rem; /* Content size */
+}
+
+.custom-metric-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.custom-metric-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* Light border */
+    margin-right: 10px;
+}
+
+.add-metric-button {
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-metric-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+.custom-metrics-list {
+    margin-top: 20px;
+}
+
+.custom-metrics-list h2 {
+    font-size: 1.5rem; /* Title size for custom metrics */
+}
+
+.custom-metrics-list ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+}
+
+.custom-metrics-list li {
+    background-color: #f8f9fa; /* Light grey background for custom metrics */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.custom-metrics-list li:hover {
+    background-color: #e9ecef; /* Change background on hover */
+}

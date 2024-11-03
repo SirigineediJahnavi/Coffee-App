@@ -1,0 +1,70 @@
+/* ShareProfile.css */
+
+.share-profile-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white; /* Light background */
+    border-radius: 10px;
+    padding: 20px;
+    color: black; /* Default text color */
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white; /* White color for the heading */
+}
+
+.custom-message-input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border color */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Light input background */
+    color: black; /* Text color for input */
+}
+
+.custom-message-input::placeholder {
+    color: #bbb; /* Placeholder color */
+}
+
+.format-selection {
+    margin-bottom: 20px;
+}
+
+.format-label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Label color */
+}
+
+.format-dropdown {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Border color for dropdown */
+    background-color: white; /* Dropdown background */
+    color: black; /* Dropdown text color */
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.share-button {
+    background-color: #3b82f6; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #2563eb; /* Hover color for buttons */
+}
